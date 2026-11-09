@@ -1,22 +1,40 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: react.dev
 
-## Project: **X**
+### Learning Log 2:
 
----
+- Went back on [react.dev](https://react.dev?utm_) and explored more React features.
+- Spent more time looking at components and how they work together.
+- Learned about `useState` and how it keeps track of changes.
+- Looked at examples where clicking a button changes something on the page.
+- Started understanding how React updates the page without me changing the HTML myself.
 
-### X/X/XX:
-* Text
+Example I looked at:
 
-### X/X/XX:
-* Text
+```js
+import { useState } from 'react';
 
+function MyButton() {
+  const [count, setCount] = useState(0);
 
-<!-- 
-* Links you used today (websites, videos, etc)
-* Things you tried, progress you made, etc
-* Challenges, a-ha moments, etc
-* Questions you still have
-* What you're going to try next
--->
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+- The `useState` part was new to me, but the example made it easier to follow.
+- I still need more practice using it without following the example.
+
+### Questions
+
+- How do I use props and `useState` together?
+- How do I add React features to a website I already made?
+
+### Next Steps
+
+- Try making a button that changes text when clicked.
+- Experiment more with components and `useState`.
